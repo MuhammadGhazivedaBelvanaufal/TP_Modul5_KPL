@@ -10,6 +10,14 @@ internal class Program
         string namaPanggilan = Console.ReadLine();
 
         haloGeneric.SapaUser(namaPanggilan);
+        //Console.ReadLine();
+
+        Console.Write("Masukkan NIM Anda: ");
+        string nim = Console.ReadLine();
+
+        DataGeneric<string> dataGeneric = new DataGeneric<string>(nim);
+        dataGeneric.PrintData();
+
         Console.ReadLine();
     }
 }

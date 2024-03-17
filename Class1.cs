@@ -15,5 +15,20 @@ namespace TPmodul5_1302220011
                 Console.WriteLine($"Halo user {input}");
             }
         }
+
+        public class DataGeneric<T>
+        {
+            public T Data { get; set; }
+
+            public DataGeneric(T data)
+            {
+                Data = data;
+            }
+
+            public void PrintData()
+            {
+                Console.WriteLine($"Data yang tersimpan adalah: " + Data);
+            }
+        }
     }
 }
